@@ -1,0 +1,27 @@
+https://github.com/krishnadreamersit/PythonDjango-1_2021.git
+
+echo "# PythonDjango-1_2021" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/krishnadreamersit/PythonDjango-1_2021.git
+git push -u origin main
+
+git remote add origin https://github.com/krishnadreamersit/PythonDjango-1_2021.git
+git branch -M main
+git push -u origin main
+
+git config --global user.email "krishna.dreamersit@gmail.com"
+git config --global user.name "Krishna Aryal"
+
+One time/Common for Creater/User
+git clone https://github.com/krishnadreamersit/PythonDjango-1_2021.git
+
+# upload
+git add .
+git commit -m "Comment"
+git push -u origin main 
+
+# download
+git pull 
