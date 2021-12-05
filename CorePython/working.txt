@@ -1,0 +1,18 @@
+obj1 = Class1(2) # declare and initialize -call init
+print(obj1.getPid()) # get
+print(obj1) # get all
+obj1.setPid(5) # set new value
+print(obj1.getPid()) # get
+print(obj1) # get all
+
+obj2 = Class2("Raj Rai") # call init
+print(obj2.getFullName())
+print(obj2) # call str() 
+obj2.setFullName("Sujan Thapa")
+print(obj2.getFullName())
+print(obj2) # call str() 
+
+obj3 = Class3(3, "Kiran")
+obj3.getPid()
+obj3.getFullName()
+

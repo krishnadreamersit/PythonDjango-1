@@ -15,7 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from . import views
+
+#links manager
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls), # System view
+    path('', views.index),
+    path('home/', views.home),# redirect to specific function (views)
+    path('sum/', views.add),
 ]
