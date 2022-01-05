@@ -1,0 +1,47 @@
+django-admin startproject MySite1
+cd MySite1
+python manage.py startapp app7
+# register app7 in settings.py (installed app)
+# create urls.py file in app7
+# create default urlpattern for app7
+# create default views.function in views.py file
+# include app7.urls in root urls
+# python manage.py runserver
+
+# daatabase settings
+settings.py -> default database
+
+# migrate default database schema
+python manage.py migrate
+
+# create superuser/administrator for admin site
+- migrate default database schema
+python manage.py createsuperuser
+    Usernane: admin
+    Email address: admin@gmail.com
+    Password: admin
+    Password (again): admin
+    The password is too similar to the username.
+    This password is too short. It must contain at least 8 characters.
+    This password is too common.
+    Bypass password validation and create user anyway? [y/N]: y
+
+# Login to admin site
+http://127.0.0.1/admin
+    admin
+    admin
+
+# Model
+- class inherited from models.Model
+- bridge between app and database table
+
+# Creating model
+- models.py -> create a class inherited from Model
+- class is container of varaibles and methods
+
+# Make Migrations
+python manage.py makemigrations  # Create DDL based on Model
+python manage.py migrate # Execute DDL
+
+# Register Model in Admin Site
+- admin.py
