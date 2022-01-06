@@ -43,6 +43,9 @@ INSTALLED_APPS = [
     'app8_2', # Model CRUD
     'app9_1', # Form
     'app10_1', # ModelForm
+    'rest_framework', # pip install django-rest-framework
+    'app15_1', # Simple REST API (Console, Desktop, Mobile, Browser, C, C++, java, python, .. etc) # CRUD
+    'app15_2', # CRUD-REST API
 ]
 
 MIDDLEWARE = [
