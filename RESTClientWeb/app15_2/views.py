@@ -4,7 +4,7 @@ import json
 import requests
 
 
-api_url = 'http://localhost:8000/app15_1/customers/'
+api_url = 'http://localhost:8000/customers/'
 
 
 def index(request):
