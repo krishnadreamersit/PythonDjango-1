@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-b+8tjs@3*#dus$ih@5r&fkv-#943bevh_gawkng-bmpy(v5(0(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.101.181']
+ALLOWED_HOSTS = ['127.0.0.1', '192.168.101.181']
 # python manage.py runserver  192.168.101.181:80
 
 # Application definition
@@ -45,6 +45,9 @@ INSTALLED_APPS = [
     'app10_1', # ModelForm
     'rest_framework', # pip install django-rest-framework
     'app15_1', # Simple REST API (Console, Desktop, Mobile, Browser, C, C++, java, python, .. etc) # CRUD
+    'app11_1', # User Management
+    'app12_1', # Session
+    'app12_2', # Cookies
 ]
 
 MIDDLEWARE = [

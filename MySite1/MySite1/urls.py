@@ -24,6 +24,9 @@ urlpatterns = [
     path('app8_2/', include('app8_2.urls')),
     path('app9_1/', include('app9_1.urls')),
     path('app10_1/', include('app10_1.urls')),
-    path('', include('app15_1.urls')),
-    path('admin/', admin.site.urls),
+    path('app11_1', include('app11_1.urls')), # User Management
+    path('app12_1/', include('app12_1.urls')), # Session
+    path('app12_2/', include('app12_2.urls')), # Cookies
+    path('app15_1/', include('app15_1.urls')), # Simple REST API
+    path('admin/', admin.site.urls), # Admin Site
 ]
