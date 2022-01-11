@@ -40,7 +40,7 @@ def index(request):
 
 # Update Password
 #     user3 = User.objects.get(username='krishna')
-#     user3.set_password('Krishna')
+#     user3.set_password('Krhna')
 #     user3.save()
     #user3.delete()
 

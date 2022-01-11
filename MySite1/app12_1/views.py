@@ -16,8 +16,9 @@ def index(request):
         password = request.POST.get('txt_password')
         user1 = authenticate(username=user, password=password)
         if user1 is not None:
+            tmp_user = User.objects.get(username=user)
             request.session['user'] = user # Create session
-            return render(request, 'app12_1/display_result.html', {'user': user, 'flag': True})
+            return render(request, 'app12_1/display_result.html', {'user': tmp_user, 'flag': True})
         else:
             return render(request, 'app12_1/login.html')
     else:
