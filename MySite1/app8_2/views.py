@@ -10,7 +10,6 @@ def index(request):
     persons = Person.objects.all()
     return render(request, 'app8_2/index.html', {'persons': persons})
 
-
 def display_new(request):
     return render(request, 'app8_2/add_new.html')
 
