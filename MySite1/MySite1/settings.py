@@ -129,6 +129,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 # Static File (images, css, js, music and movies)
+
 STATIC_ROOT = 'staticfiles'
 
 STATIC_URL = 'static/'
