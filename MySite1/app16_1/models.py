@@ -6,4 +6,4 @@ class User_Profile(models.Model):
     picture = models.FileField()
 
     def __str__(self):
-        return str(self.id)+", "+self.fullname
+        return str(self.id)+", "+self.fullname+", "+str(self.picture)

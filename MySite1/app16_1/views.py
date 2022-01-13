@@ -24,3 +24,10 @@ def create_profile(request):
             return render(request, 'app16_1/details.html', {'user_pr': user_pr})
     context = {"form": form,}
     return render(request, 'app16_1/create.html', context)
+
+"""
+# Task
+    media type-extendion filter (doc, pdf | png, jpg, jpeg)
+    media size - max size filter (upto 1 mb)
+    media store in field of table of database  (image) - binary data store in datbase table
+"""
