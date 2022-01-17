@@ -48,7 +48,10 @@ INSTALLED_APPS = [
     'app11_1', # User Management
     'app12_1', # Session
     'app12_2', # Cookies
-    'app16_1'  #
+    'app16_1',  # File Upload
+    'app17_1',  # Sending Email
+    'app17_2', # Sending Email with Attachment
+    'django-crispy-forms',
 ]
 
 MIDDLEWARE = [
@@ -59,6 +62,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    # How to create user defined middleware
 ]
 
 ROOT_URLCONF = 'MySite1.urls'
@@ -141,3 +146,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# Sending Email
+EMAIL_BACKEND ='django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'krishna.dreamersit@gmail.com'
+EMAIL_HOST_PASSWORD = 'Nepal@123'
