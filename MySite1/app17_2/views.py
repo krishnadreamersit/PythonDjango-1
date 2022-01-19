@@ -7,7 +7,7 @@ from django.conf import settings
 
 # Create your views here.
 
-class EmailAttachementView(View):
+class EmailAttachementView(View): # User defined view
     form_class = EmailForm
     template_name = 'app17_2/compose.html'
 

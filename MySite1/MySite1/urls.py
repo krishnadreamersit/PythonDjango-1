@@ -31,9 +31,10 @@ urlpatterns = [
     path('app12_1/', include('app12_1.urls')), # Session
     path('app12_2/', include('app12_2.urls')), # Cookies
     path('app15_1/', include('app15_1.urls')), # Simple REST API
+    path('', include('app14_1.urls')), # Creating Non-HTML Contents
     path('app16_1/', include('app16_1.urls')), # File Upload
     path('app17_1/', include('app17_1.urls')), # Email Sending
-    path('', include('app17_2.urls')), # Email Sending with Attachment
+    # path('app17_2/', include('app17_2.urls')), # Email Sending with Attachment
     path('admin/', admin.site.urls), # Admin Site
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
