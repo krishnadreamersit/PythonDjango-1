@@ -72,4 +72,3 @@ if response.status_code==200:
     customers = response.json()
     for customer in customers:
         print(customer)
-
