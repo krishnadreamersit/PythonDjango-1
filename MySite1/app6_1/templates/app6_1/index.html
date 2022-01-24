@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+    <body>
+        {% comment %}
+        <h2>Tags</h2>
+        <h3>autoescape</h3>
+        {% autoescape on %}
+            {{ text1 }}
+        {% endautoescape %}
+        {% autoescape off %}
+            {{ text1 }}
+        {% endautoescape %}
+        {% endcomment %}
+
+
+        <h3>comment</h3>
+        {% comment %}
+        {{ title }}
+        {% autoescape off%}
+        {{ text1 }}
+        {% endautoescape %}
+        {% endcomment %}
+
+    </body>
+</html>

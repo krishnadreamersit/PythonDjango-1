@@ -21,6 +21,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
+    path('', include('app6_1.urls')),
     path('app7', include('app7.urls')),
     path('app7_1', include('app7_1.urls')),
     path('app8_1/', include('app8_1.urls')),
@@ -34,7 +35,7 @@ urlpatterns = [
     path('', include('app14_1.urls')), # Creating Non-HTML Contents
     path('app16_1/', include('app16_1.urls')), # File Upload
     path('app17_1/', include('app17_1.urls')), # Email Sending
-    # path('app17_2/', include('app17_2.urls')), # Email Sending with Attachment
+    path('app17_2/', include('app17_2.urls')), # Email Sending with Attachment
     path('admin/', admin.site.urls), # Admin Site
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
