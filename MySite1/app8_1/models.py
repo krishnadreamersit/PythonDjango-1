@@ -1,6 +1,5 @@
 from django.db import models
 
-
 class Person(models.Model):
     pid = models.IntegerField(primary_key=True)
     full_name = models.CharField(max_length=50)

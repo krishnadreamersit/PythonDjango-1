@@ -17,13 +17,26 @@
         {% endcomment %}
 
 
-        <h3>comment</h3>
         {% comment %}
+        <h3>comment</h3>
         {{ title }}
         {% autoescape off%}
         {{ text1 }}
         {% endautoescape %}
         {% endcomment %}
 
+        <h3>Filter</h3>
+        <p>{{ var1 | lower }}</p>
+        <p>
+            {% filter lower %}
+                {{ var1 }}
+            {% endfilter %}
+        </p>
+
+        <p>
+            {% filter upper %}
+                {{ var1  }}
+            {% endfilter %}
+        </p>
     </body>
 </html>

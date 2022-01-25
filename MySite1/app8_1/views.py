@@ -15,35 +15,14 @@ def crud(request):
     # person2.contact_address="Lalitpur"
     # person2.save()
 
-    # clien1 = Client(full_name='Rhydam', contact_address='Kathmandu')
-    # clien1.save()
-
-    # clien2 = Client()
-    # clien2.full_name="Rima"
-    # clien2.contact_address = "Lalitpur"
-    # clien2.save()
-    # print(clien2.id)
-
-    # person1 = Person(pid=1, full_name="Raj Rai", contact_address="Kthmandu")
-    # person1.save()
-
-    # person2 = Person()
-    # person2.pid=2
-    # person2.full_name="Kiran Rai"
-    # person2.contact_address="Lalitpur"
-    # person2.save()
-
-    # person3 = Person.objects.create(pid=3, full_name='Reema Thapa',contact_address='Bhaktapur')
-
-# Select or Filter Records
+# Select or Filter Records/Search
     # Select All
     # all_clients = Client.objects.all()
     #for client in all_clients:
         #print(client)
 
-    # Get Value
+    # Get Value # Select * from Client where full_name='Raj'
     # clients = Client.objects.get(full_name='Raj')
-    # print("PK :", client)
 
     # Filter
     # result = Client.objects.filter(id=1)

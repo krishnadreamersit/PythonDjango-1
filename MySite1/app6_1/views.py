@@ -42,6 +42,7 @@ def index(request):
     #5. csrf_token # used in form which post values with post method
 
     #6. cycle
+    """
     context = {'persons':
         [
         {'first_name':'Mohit', 'last_name':'Maharjan', 'email':'mohit@gmail.com'},
@@ -50,3 +51,86 @@ def index(request):
         ],
     }
     return render(request, 'app6_1/cycle.html', context)
+    """
+    # filter
+    var1 ="broadway infosys nepal"
+    context = {'var1': var1}
+    return render(request, 'app6_1/index.html', context)
+
+# Other Tags
+    # firstof
+    # for
+    # for … empty
+    # if
+    # ifchanged
+    # include
+    # load
+    # lorem
+    # now
+    # regroup
+    # resetcycle
+    # spaceless
+    # templatetag
+    # url
+    # verbatim
+    # widthratio
+    # with
+
+# Filters
+    # add
+    # addslashes
+    # capfirst
+    # center
+    # cut
+    # date
+    # default
+    # default_if_none
+    # dictsort
+    # dictsortreversed
+    # divisibleby
+    # escape
+    # escapejs
+    # filesizeformat
+    # first
+    # floatformat
+    # force_escape
+    # get_digit
+    # iriencode
+    # join
+    # json_script
+    # last
+    # length
+    # length_is
+    # linebreaks
+    # linebreaksbr
+    # linenumbers
+    # ljust
+    # lower
+    # make_list
+    # phone2numeric
+    # pluralize
+    # pprint
+    # random
+    # rjust
+    # safe
+    # safeseq
+    # slice
+    # slugify
+    # stringformat
+    # striptags
+    # time
+    # timesince
+    # timeuntil
+    # title
+    # truncatechars
+    # truncatechars_html
+    # truncatewords
+    # truncatewords_html
+    # unordered_list
+    # upper
+    # urlencode
+    # urlize
+    # urlizetrunc
+    # wordcount
+    # wordwrap
+    # yesno

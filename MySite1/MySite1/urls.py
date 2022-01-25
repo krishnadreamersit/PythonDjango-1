@@ -22,8 +22,6 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('', include('app6_1.urls')),
-    path('app7', include('app7.urls')),
-    path('app7_1', include('app7_1.urls')),
     path('app8_1/', include('app8_1.urls')),
     path('app8_2/', include('app8_2.urls')),
     path('app9_1/', include('app9_1.urls')),
